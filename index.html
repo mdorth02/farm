@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiona's Farm</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -14,167 +15,172 @@
 
     <nav>
         <ul>
-            <li>Fruits</li>
-            <li>Vegetables</li>
+            <li><a href="#fruits">Fruits</a></li>
+            <li><a href="#vegetables">Vegetables</a></li>
+            <li id="hidden"><a href="#top">Go to Top</a></li>
         </ul>
     </nav>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <section id="fruits">
-        <h2>Fruits</h2>
-            <p>Welcome to our farm, where we take pride in growing a variety of delicious and nutritious fruits. Our commitment to sustainable farming practices ensures that every bite of our fruit is bursting with natural flavor and goodness. From the orchard to your table, we offer a selection of fresh, hand-picked fruits that are perfect for snacking, baking, and cooking. Experience the taste of nature's bounty with our premium quality fruits.</p>
-        <h2>Fruits for Sale</h2>
-            <div id="apples">
-                <img src="images/apples.png" alt="picture of a red apple">
-                <h3>Apples</h3>
-            </div>
-
-            <div id="oranges">
-                <img src="images/oranges.png" alt="picture of oranges">
-                <h3>Oranges</h3>
-            </div>
-
-            <div id="peaches">
-                <img src="images/peaches.png" alt="picture of peaches">
-                <h3>Peaches</h3>
-            </div>
-
-            <div id="strawberries">
-                <img src="images/strawberries.png" alt="picture of strawberries">
-                <h3>Strawberries</h3>
-            </div>
-
-            <div id="blueberries">
-                <img src="images/blueberries.png" alt="picture of blueberries">
-                <h3>Blueberries</h3>
-            </div>
-
-            <div id="raspberries">
-                <img src="images/raspberries.png" alt="picture of red raspberries">
-                <h3>Raspberries</h3>
-            </div>
-
-            <div id="cherries">
-                <img src="images/cherries.png" alt="picture of dark red cherries">
-                <h3>Cherries</h3>
-            </div>
-
-            <div id="pears">
-                <img src="images/pears.png" alt="picture of a yellow-green pear">
-                <h3>Pears</h3>
-            </div>
-
-            <div id="plumbs">
-                <img src="images/plums.png" alt="picture of two dark purple plumbs">
-                <h3>Plumbs</h3>
-            </div>
-
-            <div id="grapes">
-                <img src="images/grapes.png" alt="picture of a bunch of grapes">
-                <h3>Grapes</h3>
-            </div>
-
-            <div id="watermelons">
-                <img src="images/watermelons.png" alt="picture of cut pieces of watermelon">
-                <h3>Watermelons</h3>
-            </div>
-
-            <div id="cantaloupes">
-                <img src="images/cantalopes.png" alt="picture of cut pieces of cantaloupe">
-                <h3>Cantaloupes</h3>
-            </div>
-    </section>
-
-    <section id="vegetables">
-        <h2>Vegetables</h2>
-            <p>At our farm, we are dedicated to growing a diverse array of vegetables that are both healthy and delicious. Our vegetables are cultivated using sustainable and eco-friendly methods to ensure the highest quality and flavor. Whether you are looking to create a fresh salad, cook a hearty meal, or simply enjoy a nutritious snack, our farm-fresh vegetables are the perfect choice. Taste the difference of locally grown produce with our vibrant and wholesome vegetables.</p>
-        <h2>Vegetables for Sale</h2>
-            <div id="broccoli">
-                <img src="images/broccoli.png" alt="picture of broccoli">
-                 <h3>Broccoli</h3>
-            </div>
+    <main>
+        <section id="fruits">
+            <h2>Fruits</h2>
+                <p>Welcome to our farm, where we take pride in growing a variety of delicious and nutritious fruits. Our commitment to sustainable farming practices ensures that every bite of our fruit is bursting with natural flavor and goodness. From the orchard to your table, we offer a selection of fresh, hand-picked fruits that are perfect for snacking, baking, and cooking. Experience the taste of nature's bounty with our premium quality fruits.</p>
+            <h2 class="for-sale">Fruits for Sale</h2>
+                <div class="container">
+                    <figure id="apples">
+                        <img src="images/apples.png" alt="picture of a red apple">
+                        <figcaption>Apples</figcaption>
+                    </figure>
     
-            <div id="lettuce">
-                <img src="images/lettuce.png" alt="picture of lettuce">
-                 <h3>Lettuce</h3>
-            </div>
+                    <figure id="oranges">
+                        <img src="images/oranges.png" alt="picture of oranges">
+                        <figcaption>Oranges</figcaption>
+                    </figure>
+    
+                    <figure id="peaches">
+                        <img src="images/peaches.png" alt="picture of peaches">
+                        <figcaption>Peaches</figcaption>
+                    </figure>
+    
+                    <figure id="strawberries">
+                        <img src="images/strawberries.png" alt="picture of strawberries">
+                        <figcaption>Strawberries</figcaption>
+                    </figure>
+    
+                    <figure id="blueberries">
+                        <img src="images/blueberries.png" alt="picture of blueberries">
+                        <figcaption>Blueberries</figcaption>
+                    </figure>
+    
+                    <figure id="raspberries">
+                        <img src="images/raspberries.png" alt="picture of red raspberries">
+                        <figcaption>Raspberries</figcaption>
+                    </figure>
+    
+                    <figure id="cherries">
+                        <img src="images/cherries.png" alt="picture of dark red cherries">
+                        <figcaption>Cherries</figcaption>
+                    </figure>
+    
+                    <figure id="pears">
+                        <img src="images/pears.png" alt="picture of a yellow-green pear">
+                        <figcaption>Pears</figcaption>
+                    </figure>
+    
+                    <figure id="plumbs">
+                        <img src="images/plums.png" alt="picture of two dark purple plumbs">
+                        <figcaption>Plumbs</figcaption>
+                    </figure>
+    
+                    <figure id="grapes">
+                        <img src="images/grapes.png" alt="picture of a bunch of grapes">
+                        <figcaption>Grapes</figcaption>
+                    </figure>
+    
+                    <figure id="watermelons">
+                        <img src="images/watermelons.png" alt="picture of cut pieces of watermelon">
+                        <figcaption>Watermelons</figcaption>
+                    </figure>
+    
+                    <figure id="cantaloupes">
+                        <img src="images/cantalopes.png" alt="picture of cut pieces of cantaloupe">
+                        <figcaption>Cantaloupes</figcaption>
+                    </figure>
+                </div>
+        </section>
+
+        <section id="vegetables">
+            <h2>Vegetables</h2>
+                <p>At our farm, we are dedicated to growing a diverse array of vegetables that are both healthy and delicious. Our vegetables are cultivated using sustainable and eco-friendly methods to ensure the highest quality and flavor. Whether you are looking to create a fresh salad, cook a hearty meal, or simply enjoy a nutritious snack, our farm-fresh vegetables are the perfect choice. Taste the difference of locally grown produce with our vibrant and wholesome vegetables.</p>
+            <h2 class="for-sale">Vegetables for Sale</h2>
+                <div class="container">
+                    <figure id="broccoli">
+                        <img src="images/broccoli.png" alt="picture of broccoli">
+                        <figcaption>Broccoli</figcaption>
+                    </figure>
             
-            <div id="eggplant">
-                <img src="images/eggplant.png" alt="picture of a small purple eggplant, with a larger eggplant behind it">
-                 <h3>Eggplant</h3>
-            </div>
-
-            <div id="spinach">
-                <img src="images/spinach.png" alt="picture of a leaf of spinach">
-                 <h3>Spinach</h3>
-            </div>
-        
-            <div id="bean-sprout">
-                <img src="images/bean-sprout.png" alt="picture of a growing bean sprout">
-                 <h3>Bean Sprout</h3>
-            </div>
-       
-            <div id="peas">
-                <img src="images/peas.png" alt="picture of peas in a pea pod">
-                 <h3>Peas</h3>
-            </div>
-        
-            <div id="bell-pepper">
-                <img src="images/bell-pepper.png" alt="picture of two red bell peppers">
-                 <h3>Bell Pepper</h3>
-            </div>
+                    <figure id="lettuce">
+                        <img src="images/lettuce.png" alt="picture of lettuce">
+                        <figcaption>Lettuce</figcaption>
+                    </figure>
+                    
+                    <figure id="eggplant">
+                        <img src="images/eggplant.png" alt="picture of a small purple eggplant, with a larger eggplant behind it">
+                        <figcaption>Eggplant</figcaption>
+                    </figure>
+    
+                    <figure id="spinach">
+                        <img src="images/spinach.png" alt="picture of a leaf of spinach">
+                        <figcaption>Spinach</figcaption>
+                    </figure>
+                
+                    <figure id="bean-sprout">
+                        <img src="images/bean-sprout.png" alt="picture of a growing bean sprout">
+                        <figcaption>Bean Sprout</figcaption>
+                    </figure>
             
-            <div id="carrot">
-                <img src="images/carrot.png" alt="picture of part of a carrot">
-                 <h3>Carrot</h3>
-            </div>
-     
-            <div id="potato">
-                <img src="images/potato.png" alt="picture of two potatoes">
-                 <h3>Potato</h3>
-            </div>
-
-            <div id="cucumber">
-                <img src="images/cucumber.png" alt="picture of part of a cucumber">
-                 <h3>Cucumber</h3>
-            </div>
-
-            <div id="tomato">
-                <img src="images/tomato.png" alt="picture of a single tomato">
-                 <h3>Tomato</h3>
-            </div>
-         
-            <div id="radish">
-                <img src="images/radish.png" alt="picture of a growing red radish">
-                 <h3>Radish</h3>
-            </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <address>
-            1234 Fake Street,
-            Mesa, AZ 85111
-            (480) 555-1234
-        </address>
-    </section>
-
-    <section id="hours">
-        <h2>Hours</h2>
-            <ul>
-                <li>Monday Closed</li>
-                <li>Tuesday 6:00 AM - 2:00PM</li>
-                <li>Wednesday 6:00 AM - 2:00PM</li>
-                <li>Thursday 6:00 AM - 2:00PM</li>
-                <li>Friday 6:00 AM - 9:00PM</li>
-                <li>Saturday 6:00 AM - 9:00PM</li>
-                <li>Sunday 6:00 AM - 5:00PM</li>
-            </ul>
-    </section>
+                    <figure id="peas">
+                        <img src="images/peas.png" alt="picture of peas in a pea pod">
+                        <figcaption>Peas</figcaption>
+                    </figure>
+                
+                    <figure id="bell-pepper">
+                        <img src="images/bell-pepper.png" alt="picture of two red bell peppers">
+                        <figcaption>Bell Pepper</figcaption>
+                    </figure>
+                    
+                    <figure id="carrot">
+                        <img src="images/carrot.png" alt="picture of part of a carrot">
+                        <figcaption>Carrot</figcaption>
+                    </figure>
+            
+                    <figure id="potato">
+                        <img src="images/potato.png" alt="picture of two potatoes">
+                        <figcaption>Potato</figcaption>
+                    </figure>
+    
+                    <figure id="cucumber">
+                        <img src="images/cucumber.png" alt="picture of part of a cucumber">
+                        <figcaption>Cucumber</figcaption>
+                    </figure>
+    
+                    <figure id="tomato">
+                        <img src="images/tomato.png" alt="picture of a single tomato">
+                        <figcaption>Tomato</figcaption>
+                    </figure>
+                
+                    <figure id="radish">
+                        <img src="images/radish.png" alt="picture of a growing red radish">
+                        <figcaption>Radish</figcaption>
+                    </figure>
+                </div>
+        </section>
+    </main>
 
     <footer>
-        <p>Copyright &copy; 2025</p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <address>
+                1234 Fake Street,
+                Mesa, AZ 85111
+                (480) 555-1234
+            </address>
+        </section>
+    
+        <section id="hours">
+            <h2>Hours</h2>
+            <dl>
+                <dt>Monday Closed</dt>
+                <dd>Tuesday 6:00 AM - 2:00PM</dd>
+                <dd>Wednesday 6:00 AM - 2:00PM</dd>
+                <dd>Thursday 6:00 AM - 2:00PM</dd>
+                <dd>Friday 6:00 AM - 9:00PM</dd>
+                <dd>Saturday 6:00 AM - 9:00PM</dd>
+                <dd>Sunday 6:00 AM - 5:00PM</dd>
+            </dl>
+        </section>
+
+        <small>Copyright &copy; 2025</small>
     </footer>
 </body>
 </html>

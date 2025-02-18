@@ -1,72 +1,243 @@
-    /* Imported Fonts */
-    /* latin-ext */
-    @font-face {
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/habibi/v21/CSR-4zFWkuqcTTNyQxhfRuUiSOt_.woff2) format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    } 
+/* -------------------- IMPORTED FONTS -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
-    /* latin */
-    @font-face {
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/habibi/v21/CSR-4zFWkuqcTTNyTRhfRuUiSA.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    /* latin */
-    @font-face {
-    font-family: 'Irish Grover';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RPSC8ocg.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-/* CSS Reset */
-p{
-    font-family: "Habibi";
+/*-------------------- CSS RESET --------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-header, h1, h2, h3 {
-    font-family: "Irish Grover";
+/*-------------------- ROOT VARIABLES --------------------*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-h1 {
-    font-size: 2.5em;
-}
 
-h2 {
-    font-size: 1.75em;
-}
-
-h3, p {
-    font-size: 1.25em;
-}
-
-/* Root Variables */
+/* -------------------- ROOT VARIABLES  -------------------- */
 :root {
-    /* Colors */
-    --green: #06A816;
-    --orange: #E75D02;
-    --black: #000000;
-    --white: #ffffff;
+    font-family: "Habibi", serif;
+    font-size: 1.25em;
+    --green:#06A816;
+    --orange:#E75D02;
+    --black:#000000;
+    --white:#ffffff;
 }
 
-/* Global Styles (mobile first/small) */
-/* need to include still! */
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+@media (min-width: 428px) {
+    header {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 0.25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-shadow: 2px 2px 2px var(--black);
+    }
+
+    header p {
+        font-style: italic;
+        padding: 0.75rem 0;
+    }
+
+    #hidden  {
+        visibility: hidden;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 2rem 0;
+        gap: 1rem;
+        display: grid;
+        justify-content: center;
+    }
+
+    nav li {
+        background-color: var(--orange);
+        text-align: center;
+        width: 250px;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    h1, h2 {
+        font-family: "Irish Grover";
+    }   
+
+    h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    
+    .for-sale {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+        align-content: space-around;
+        gap: 20px;
+    }
+
+
+    figcaption {
+        width: 10%;
+        position: relative;
+        bottom: 175px;
+        left: 45%;
+        color: var(--white);
+        background-color: rgba(0,0,0,0.75);
+    }
+
+    footer {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 10px;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    footer section {
+        padding: 10px;
+    }
+
+    footer dt {
+        padding: 4px;
+    }
+
+    footer dd {
+        padding: 4px;
+    }
+
+    small {
+        position: relative;
+        top: 33px;
+        color: var(--green);
+    }
+}
 
 /* MEDIA QUERY (medium) */
-/* need to include still! */
+@media (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header p {
+        text-align: right;
+    }
+
+    nav ul {
+        list-style-type: none;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        justify-items: center;
+    }
+
+    nav li {
+        width: 250px;
+        border-radius: 4px;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+        align-content: space-around;
+        gap: 20px;
+    }  
+
+    footer {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 10px;
+        margin: 30px 0;
+        text-align: center;
+    }
+}
 
 /* MEDIA QUERY (large) */
-/* need to include still! */
+@media (min-width: 992px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-content: space-around;
+        gap: 20px;
+    }  
+}
 
 /* MEDIA QUERY (xl) */
-/* need to include still! */
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-content: space-around;
+        gap: 20px;
+    }  
+}
